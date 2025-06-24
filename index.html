@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Login</title>
+    <style>
+        /* Mengatur dasar halaman */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Kotak container untuk form login */
+        .login-container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        /* Judul form */
+        .login-container h1 {
+            text-align: center;
+            color: #1c1c1c;
+            margin-bottom: 24px;
+        }
+
+        /* Grup untuk setiap input (label + input field) */
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        /* Label untuk input */
+        .input-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* Kotak input untuk username dan password */
+        .input-group input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box; /* Agar padding tidak menambah lebar elemen */
+        }
+
+        /* Tombol Login */
+        .login-button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Efek saat kursor mouse di atas tombol */
+        .login-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Teks tambahan di bawah */
+        .extra-text {
+            text-align: center;
+            margin-top: 16px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .extra-text a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .extra-text a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h1>Login Akun Anda</h1>
+        <form action="#" method="post">
+            <div class="input-group">
+                <label for="username">Email atau Username</label>
+                <input type="text" id="username" name="username" placeholder="Masukkan username Anda" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Masukkan password Anda" required>
+            </div>
+            <button type="submit" class="login-button">Login</button>
+            <p class="extra-text">
+                Belum punya akun? <a href="#">Daftar di sini</a>
+            </p>
+        </form>
+    </div>
+
+</body>
+</html>
